@@ -60,8 +60,8 @@ async def on_message(message: discord.Message):
         return
 
     # 본인 ID가 아니면 무시
-    if message.author.id != MY_USER_ID:
-        return
+    # if message.author.id != MY_USER_ID:
+        # return
 
     # --- [기능 1] /ㄱㅈ 계좌 정보 출력 ---
     if message.content.strip() == "/ㄱㅈ":
