@@ -139,7 +139,7 @@ if __name__ == "__main__":
     ping_thread.start()
 
     if USER_TOKEN:
-        # 셀프봇은 bot=False 옵션을 전달해야 함
-        client.run(USER_TOKEN, bot=False)
+        # discord.py-self 최신 버전은 bot=False 인자가 필요 없습니다.
+        client.run(USER_TOKEN)
     else:
         print("에러: USER_TOKEN 환경 변수가 설정되지 않았습니다.")
