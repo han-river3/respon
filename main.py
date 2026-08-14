@@ -60,12 +60,6 @@ async def on_message(message: discord.Message):
             "• **계좌번호:** `100-129-436062`\n"
             "_복사하여 사용하세요._"
         )
-
-        try:
-            await message.delete()  # 내가 쓴 명령어 메시지 삭제
-        except Exception:
-            pass
-
         await message.channel.send(account_msg)
         return
 
@@ -108,12 +102,6 @@ async def on_message(message: discord.Message):
             f"  - 필요 금액 : {required_amount:,.0f}원\n"
             "```"
         )
-
-        try:
-            await message.delete()  # 내가 쓴 명령어 메시지 삭제
-        except Exception:
-            pass
-
         await message.channel.send(result_msg)
 
 
